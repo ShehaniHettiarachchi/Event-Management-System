@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+	
+  <display-name>EM-oopProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Customer Login -->
+   <servlet>
+    	<servlet-name>LoginServlet</servlet-name>
+    	<servlet-class>com.customer.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>LoginServlet</servlet-name>
+    	<url-pattern>/login</url-pattern>
+    </servlet-mapping>
+  
+  <!-- Customer Insert -->
+   <servlet>
+    	<servlet-name>InsertServlet</servlet-name>
+    	<servlet-class>com.customer.InsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>InsertServlet</servlet-name>
+    	<url-pattern>/insertCus</url-pattern>
+    </servlet-mapping>
+
+    
+  
+    
+     <!-- Attendee Delete -->
+  <servlet>
+    	<servlet-name>DeleteAttendeeServlet</servlet-name>
+    	<servlet-class>com.attendee.DeleteAttendeeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>DeleteAttendeeServlet</servlet-name>
+    	<url-pattern>/delete</url-pattern>
+    </servlet-mapping>  
+    
+   
+ 
+</web-app>
