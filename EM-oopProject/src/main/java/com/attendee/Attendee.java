@@ -51,6 +51,7 @@ public class Attendee {
 		return cusid;
 	}
 
+	//setters
 	public void setCusid(int cusid) {
 		this.cusid = cusid;
 	}
