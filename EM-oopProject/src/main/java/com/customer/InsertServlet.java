@@ -19,6 +19,7 @@ public class InsertServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		//catch customer inserted data
 		String cusname = request.getParameter("cusname");
 		String email = request.getParameter("email");
 		String phone = request.getParameter("phone");
