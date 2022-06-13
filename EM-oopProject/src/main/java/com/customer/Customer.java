@@ -23,7 +23,7 @@ public class Customer {
 				
 			}
 
-			//getters
+			// getters
 			public int getCusid() {
 				return cusid;
 			}
