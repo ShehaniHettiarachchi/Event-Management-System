@@ -12,7 +12,7 @@ public class Customer {
 			
 			//overloaded constructor
 			public Customer(int cusid, String cusname, String password, String email, String phone, String nic) {
-				super();
+				
 				this.cusid = cusid;
 				this.cusname = cusname;
 				this.password = password;
